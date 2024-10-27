@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+
+}
+
+header {
+    background-color: #ffffff;
+    color: rgb(255, 0, 0);
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+}
+
+header .logo img {
+    height: 85px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: 0 auto;
+    max-width: calc(100% - 200px); /* 100px margin on each side */
+    padding: 0 20px;
+}
+
+#home h1 {
+    text-align: center;
+}
+
+#home {
+    margin: 0 auto;
+    max-width: calc(100% - 200px); /* 100px margin on each side */
+}
+
+.heart-word {
+    color: red;
+    font-weight: bold; /* Optional: makes the text bold */
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+footer {
+    background-color: #e63946;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+}
+
+.container {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.welcome-heading {
+    font-size: 3em; /* Adjust the size as needed */
+}
+
+#about {
+    padding: 20px;
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.about-item {
+    flex: 1;
+    max-width: 300px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.icon {
+    font-size: 40px;
+    color: #e63946; /* Red color for icons */
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+}
+
+#contact {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-details, .contact-form {
+    flex: 1;
+    max-width: 45%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.contact-details h3, .contact-form h3 {
+    margin-top: 0;
+}
+
+.contact-details p {
+    margin: 10px 0;
+}
+
+.map {
+    margin-top: 20px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.contact-form button {
+    background-color: #e63946;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #d62839;
+}
