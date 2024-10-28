@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock title %}</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+     /* Inline CSS corrections for buttons */
+     .btn-primary {
+         padding: 10px 20px;
+         color: antiquewhite;
+         background-color: dodgerblue;
+         border: none;
+         border-radius: 4px;
+         text-decoration: none;
+         font-size: 16px;
+         font-weight: bold;
+         display: inline-block;
+     }
+
+     .btn-primary:hover {
+         background-color: rgb(10, 116, 222);
+         text-decoration: none;
+     }
+
+     .container {
+         margin-top: 100px;
+     }
+
+     .welcome-section {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         max-width: 1200px;
+         margin: 0 auto;
+     }
+
+     .welcome-text {
+         max-width: 50%;
+         text-align: left;
+     }
+
+     .welcome-heading {
+         color: black;
+         margin-bottom: 20px;
+     }
+
+     .welcome-heading span {
+         color: rgb(31, 185, 31)
+     }
+
+     .welcome-image {
+         width: 500px;
+     }
+
+     .btn-container {
+         margin-top: 20px;
+     }
+
+     footer {
+         text-align: center;
+         padding: 10px;
+         background-color: #f1f1f1;
+     }
+ </style>
+    
+</head>
+<body>
+    <header style="margin-top: -85px; width: 1450px;">
+        <div class="logo" style="display: flex;">
+            <img src="/static/logo copy.jpg" alt="Farmer Guider" style="border-radius: 50%; width: 70px; height: 70px;">
+            <h1 style="color: black; margin-left: 10px; margin-top: 18px;"><span style="color: rgb(31, 185, 31);">Farmer</span> Guider</h1>
+            <h1 style="color: black; margin-left: 120px; margin-top: 18px;"><span style="color: rgb(31, 185, 31);">Crop</span> Recommendation System <span class="text-success">🌱</span></h1>
+        </div>
+        
+    </header>
+    {% block body %}
+     
+   {% endblock body %}
+    
+    <footer style="margin-top: 30px;color: black;">
+        &copy; 2024 Farmer Guider. All rights reserved.
+    </footer>
+</body>
+</html>
