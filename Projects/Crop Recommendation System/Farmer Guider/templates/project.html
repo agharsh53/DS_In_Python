@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parameter Collection Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+        }
+        .logo h1 {
+            margin: 0;
+            color: black;
+            margin-left: 10px;
+            font-size: 32px;
+        }
+        .logo h1 span {
+            color: rgb(31, 185, 31);
+        }
+        .form-container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 400px;
+            flex-grow: 1;
+        }
+        h2 {
+            margin-top: 0;
+            font-size: 24px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 380px;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .form-group input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 4px;
+            width: 100px;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #218838;
+        }
+        .btn-primary {
+            background-color: #28a745;
+            color: white;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 4px;
+            width: 80px;
+            display: inline-block;
+            text-align: center;
+        }
+        .btn-primary:hover {
+            background-color: #218838;
+        }
+        footer {
+            background-color: #fff;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            padding: 10px;
+            color: black;
+            font-size: 14px;
+            margin-top: auto;
+        }
+        .form-group button {
+            display: flex;
+            justify-content: space-between;
+        }
+        footer {
+        margin-top: 30px;
+        padding: 10px;
+        background-color: #f1f1f1;
+        text-align: center;
+        color: black;
+        font-size: 16px;
+        
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/static/logo copy.jpg" alt="Farmer Guider">
+            <h1><span>Farmer</span> Guider</h1>
+            <h1 style="color: black; margin-left: 120px; margin-top: 18px;"><span style="color: rgb(31, 185, 31);">Crop</span> Recommendation System <span class="text-success">🌱</span></h1>
+        </div>
+    </header>
+    <div style="display: flex;">
+        <div class="form-container" style="margin-left: 350px;">
+            <h2 style="text-align: center;">Enter Soil Parameters</h2>
+            <form action="{{ url_for('submit') }}" method="post">
+                <div class="form-group">
+                    <label for="n">Nitrogen:</label>
+                    <input type="text" id="n" name="n" required>
+                </div>
+                <div class="form-group">
+                    <label for="p">Phosphorus:</label>
+                    <input type="text" id="p" name="p" required>
+                </div>
+                <div class="form-group">
+                    <label for="k">Potassium:</label>
+                    <input type="text" id="k" name="k" required>
+                </div>
+                <div class="form-group">
+                    <label for="temperature">Temperature:</label>
+                    <input type="text" id="temperature" name="temperature" required>
+                </div>
+                <div class="form-group">
+                    <label for="humidity">Humidity:</label>
+                    <input type="text" id="humidity" name="humidity" required>
+                </div>
+                <div class="form-group">
+                    <label for="ph">pH:</label>
+                    <input type="text" id="ph" name="ph" required>
+                </div>
+                <div class="form-group">
+                    <label for="rainfall">Rainfall:</label>
+                    <input type="text" id="rainfall" name="rainfall" required>
+                </div>
+                <div class="form-group">
+                    <a href="/" class="btn-primary" style="margin-left: 50px;">Back</a>
+                    <input type="submit" value="Submit" style="margin-left: 100px;">
+                </div>
+            </form>
+        </div>
+        <div>
+            <img src="/static/2img.jpg" alt="" style="height: 700px;margin-top: -2px;">
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Farmer Guider. All rights reserved.
+    </footer>
+</body>
+</html>
