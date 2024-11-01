@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block head %}
+    {{ super() }}
+    {% block title %}
+        Farmer Friends
+    {% endblock title %}
+    
+{% endblock %}  
+{% block body %}
+    <div class="container">
+        <main>
+            <section id="home">
+                
+                <div class="welcome-section">
+                    <div class="welcome-text" style="margin-right: -100px;">
+                        <h1 class="welcome-heading" style="margin-left: 100px;">How can I <span>Help</span> you?</h1>
+                        <div class="btn-container">
+                            <a class="btn-primary" href="/project" role="button" style="background-color: rgb(31, 185, 31);margin-left: 220px;">Enter Soil Data</a>
+                        </div>
+                    </div>
+                    <img src="/static/robot.png" alt="" class="welcome-image" style="margin-left: -100px;width: 370px;">
+                </div>
+            </section>
+        </main>
+    </div>
+    
+{% endblock body %}
